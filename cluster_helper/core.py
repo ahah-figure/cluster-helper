@@ -1,7 +1,7 @@
 import os
 import ray
 
-from plnet.util import init_ray
+from dmnet.util import init_ray
 
 
 @ray.remote(num_cpus=os.cpu_count())
@@ -23,4 +23,4 @@ def install_wheel_cluster(wheel_path, install_deps: bool) -> None:
 
 
 if __name__ == "__main__":
-    install_wheel_cluster("gs://plnet/data/wheel/plnet-0.1-py3-none-any.whl", False)
+    install_wheel_cluster("gs://dmnet/data/wheel/dmnet-0.1-py3-none-any.whl", False)
