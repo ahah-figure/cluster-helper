@@ -23,4 +23,4 @@ def install_wheel_cluster(wheel_path, install_deps: bool) -> None:
 
 
 if __name__ == "__main__":
-    install_wheel_cluster("gs://dmnet/data/wheel/dmnet-0.1-py3-none-any.whl", False)
+    install_wheel_cluster("gs://andrew-scratch-bucket/tmp/dmnet/wheel/dmnet-0.1-py3-none-any.whl", False)
